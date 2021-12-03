@@ -33,7 +33,7 @@
     height: 30px;
     position: absolute;
     top: 8px;
-    left: 420px;
+    left: 412px;
   }
   &__heading {
     font-weight: 900;
@@ -188,6 +188,9 @@
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    &__icon {
+      left: 490px;
+    }
   }
   .modal-form {
     width: 448px;

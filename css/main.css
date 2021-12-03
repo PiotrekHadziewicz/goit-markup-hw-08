@@ -449,7 +449,7 @@ ul {
   height: 30px;
   position: absolute;
   top: 8px;
-  left: 420px;
+  left: 412px;
 }
 
 .modal__heading {
@@ -620,6 +620,9 @@ ul {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+  }
+  .modal__icon {
+    left: 490px;
   }
   .modal-form {
     width: 448px;
