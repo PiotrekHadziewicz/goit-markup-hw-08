@@ -1,0 +1,13 @@
+.modal-menu {
+  width: 40px;
+  height: 40px;
+  &:hover {
+    fill: var(--hover-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-menu {
+    display: none;
+  }
+}

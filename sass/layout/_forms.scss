@@ -1,0 +1,42 @@
+.footer-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  &__email {
+    background-color: var(--background-color);
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 28px 10px 42px;
+    background-color: var(--hover-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  &__btn:hover {
+    cursor: pointer;
+  }
+}
+.form-newsletter-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--secondary-color);
+  margin-left: 24px;
+}
