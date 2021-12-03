@@ -586,7 +586,7 @@ ul {
   height: 18px;
   fill: var(--main-color);
   position: absolute;
-  top: 115px;
+  top: 125px;
   left: 50px;
   transition-property: fill;
   transition-duration: 250ms;
@@ -598,7 +598,7 @@ ul {
   height: 18px;
   fill: var(--main-color);
   position: absolute;
-  top: 185px;
+  top: 195px;
   left: 50px;
   transition-property: fill;
   transition-duration: 250ms;
@@ -610,7 +610,7 @@ ul {
   height: 18px;
   fill: var(--main-color);
   position: absolute;
-  top: 250px;
+  top: 260px;
   left: 50px;
   transition-property: fill;
   transition-duration: 250ms;
