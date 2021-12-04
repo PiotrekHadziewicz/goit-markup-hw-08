@@ -10,8 +10,8 @@
   padding-top: 62px;
   &__item {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 1.175px;
+    font-size: 24px;
+    line-height: 1.175;
     letter-spacing: 0.02em;
     margin-bottom: 64px;
     padding-left: 40px;
@@ -22,9 +22,12 @@
   margin-top: 302px;
 }
 .contact-modal__item {
-  font-size: 34px;
-  line-height: 1.176;
   color: #757575;
+}
+.contact-modal__item--modifier {
+  color: var(--hover-color);
+  font-size: 40px;
+  line-height: 1.167;
 }
 .social-links {
   width: 450px;
