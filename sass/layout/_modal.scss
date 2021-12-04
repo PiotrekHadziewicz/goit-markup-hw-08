@@ -31,14 +31,11 @@
   &__icon {
     width: 30px;
     height: 30px;
-    // fill: var(--main-color);
-    stroke: rgba(0, 0, 0, 0.1);
+    fill: var(--secondary-color);
+    // stroke: rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 8px;
     left: 412px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__heading {
     font-weight: 900;
@@ -50,6 +47,12 @@
     padding: 40px 40px 0px 40px;
     margin-bottom: 12px;
   }
+}
+.modal__icon--fill {
+  fill: var(--main-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   .modal {
@@ -154,7 +157,7 @@
   color: var(--hover-color);
 }
 .modal-form__submit:hover,
-.modal__icon:hover {
+.modal__icon--fill:hover {
   fill: var(--hover-color);
   cursor: pointer;
 }
