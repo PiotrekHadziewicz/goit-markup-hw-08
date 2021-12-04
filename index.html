@@ -32,74 +32,45 @@
         <a class="logo" href="./index.html"
           ><span class="logo__webstudio">Web</span>Studio
         </a>
-        <svg class="modal-menu">
-          <use href="#icon-menu"
-          data-mobile-menu-open></use>
+        <svg class="modal-menu"
+        data-mobile-menu-open>
+          <use href="#icon-menu"></use>
         </svg>
         <div class="backdrop is-hidden" data-mobile-menu>
-            <div class="modal">
-              <svg class="modal__icon">
-                <use
-                  href="./images/icons.svg#icon-close"
-                  data-mobile-menu-close
-                ></use>
-              </svg>
-              <p class="modal__heading">
-                Zostaw swoje dane w formularzu poniżej
-              </p>
-              <form class="modal-form">
-                <label class="modal-form__label" for="name">Imie</label>
-                <input
-                  id="name"
-                  class="modal-form__input"
-                  type="text"
-                  name="firstname"
-                />
-                <svg class="person-icon">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-                <label class="modal-form__label" for="tel">Telefon</label>
-                <input
-                  id="tel"
-                  class="modal-form__input"
-                  type="tel"
-                  name="tel"
-                />
-                <svg class="tel-icon">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                <label class="modal-form__label" for="email">Email</label>
-                <input
-                  id="email"
-                  class="modal-form__input"
-                  type="email"
-                  name="email"
-                />
-                <svg class="email-icon">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-                <label class="modal-form__label" for="comment">Komentarz</label>
-                <textarea
-                  id="comment"
-                  class="modal-form__textarea"
-                  placeholder="Wprowadź tekst"
-                ></textarea>
-                <input
-                  id="user-policy"
-                  class="modal-form__checkbox visually-hidden"
-                  type="checkbox"
-                />
-                <label for="user-policy" class="modal-form__checkbox-label"
-                  >Oświadczam iż akceptuję
-                  <a href="#" class="checkbox-label__link">Regulamin</a> i
-                  <a href="#" class="checkbox-label__link"
-                    >Politykę Prywatności.</a
-                  ></label
-                >
-                <button type="submit" class="modal-form__submit">Wyślij</button>
-              </form>
-            </div>
+          <div class="modal">
+            <svg class="modal__icon">
+              <use
+                href="./images/icons.svg#icon-close"
+                data-mobile-menu-close
+              ></use>
+            </svg>
+            <nav class="navigation-modal">
+            <a
+            class="navigation-modal__item links"
+            href="./index.html"
+            >Agencja</a>
+            <a class="navigation-modal__item links" href="./portfolio.html"
+              >Portfolio</a>
+            <a class="navigation-modal__item links">Kontakt</a>
+            </nav>
+          <div class="contact-modal">
+          <a
+            class="links contact-modal__item"
+            href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+          <a class="links contact-modal__item" href="tel:+48 111 111 111">
+            +48 111 111 111
+          </a>
           </div>
+          <div class="social-links">
+            <a class="social-links__item links">Instagram</a>
+            <a class="social-links__item links">Twitter</a>
+            <a class="social-links__item links">Facebook</a>
+            <a class="social-links__item links">Linkedln</a>
+          </div>
+        </div>
+        </div>
         <nav class="navigation">
           <a
             class="navigation__item navigation__item-active links"
@@ -278,7 +249,7 @@
         <div class="container">
           <h2 class="heading">Czym się zajmujemy</h2>
           <ul class="list">
-            <li class="list__img">
+            <li class="list__img list--margin">
               <img
                 src="./images/img1.jpg"
                 alt="Ręce osoby piszącej na klawiaturze."
@@ -287,7 +258,7 @@
               />
               <p class="computer-app">APLIKACJE KOMPUTEROWE</p>
             </li>
-            <li class="list__img">
+            <li class="list__img list--margin">
               <img
                 src="./images/img2.jpg"
                 alt="Ręce trzymające telefon przy laptopie."

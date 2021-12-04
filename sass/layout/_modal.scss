@@ -31,9 +31,13 @@
   &__icon {
     width: 30px;
     height: 30px;
+    fill: var(--main-color);
     position: absolute;
     top: 8px;
     left: 412px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__heading {
     font-weight: 900;
@@ -150,6 +154,7 @@
 }
 .modal-form__submit:hover,
 .modal__icon:hover {
+  fill: var(--hover-color);
   cursor: pointer;
 }
 .person-icon {

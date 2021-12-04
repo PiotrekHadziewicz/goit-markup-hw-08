@@ -396,6 +396,54 @@ ul {
   }
 }
 
+.navigation-modal,
+.contact-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 450px;
+  padding-top: 62px;
+}
+
+.navigation-modal__item,
+.contact-modal__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175px;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+  padding-left: 40px;
+}
+
+.contact-modal {
+  padding-top: 0;
+  margin-top: 302px;
+}
+
+.contact-modal__item {
+  font-size: 34px;
+  line-height: 1.176;
+  color: #757575;
+}
+
+.social-links {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 40px;
+}
+
+.social-links__item {
+  color: var(--hover-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  margin-right: 20px;
+}
+
 .footer {
   background-color: var(--background-color);
   flex-direction: column;
@@ -611,9 +659,13 @@ ul {
 .modal__icon {
   width: 30px;
   height: 30px;
+  fill: var(--main-color);
   position: absolute;
   top: 8px;
   left: 412px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__heading {
@@ -742,6 +794,7 @@ ul {
 
 .modal-form__submit:hover,
 .modal__icon:hover {
+  fill: var(--hover-color);
   cursor: pointer;
 }
 
@@ -971,7 +1024,6 @@ ul {
 
 .list__img {
   margin-bottom: 30px;
-  margin-right: 30px;
   position: relative;
 }
 
@@ -1019,6 +1071,9 @@ ul {
   .list__icons {
     width: 270px;
   }
+  .list--margin {
+    margin-right: 30px;
+  }
 }
 
 .team-photos {
@@ -1034,7 +1089,7 @@ ul {
 }
 
 .team-photos__img {
-  width: inherit;
+  width: 450px;
 }
 
 .team-photos__item {
@@ -1098,6 +1153,9 @@ ul {
   .team-photos {
     width: 354px;
   }
+  .team-photos__img {
+    width: 354px;
+  }
   .social-ellipse {
     margin-bottom: 30px;
   }
@@ -1110,6 +1168,9 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .team-photos {
+    width: 270px;
+  }
+  .team-photos__img {
     width: 270px;
   }
   .team-photos__span {

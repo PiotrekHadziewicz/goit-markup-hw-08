@@ -31,7 +31,6 @@
   }
   &__img {
     margin-bottom: 30px;
-    margin-right: 30px;
     position: relative;
   }
 }
@@ -75,6 +74,9 @@
     }
     &__icons {
       width: 270px;
+    }
+    &--margin {
+      margin-right: 30px;
     }
   }
 }
