@@ -659,7 +659,6 @@ ul {
 .modal__icon {
   width: 30px;
   height: 30px;
-  fill: var(--main-color);
   stroke: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 8px;
