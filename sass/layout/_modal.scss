@@ -49,8 +49,9 @@
   }
 }
 .modal__icon--fill {
-  fill: var(--main-color);
-  transition-property: fill;
+  fill: none;
+  color: var(--main-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -158,7 +159,7 @@
 }
 .modal-form__submit:hover,
 .modal__icon--fill:hover {
-  fill: var(--hover-color);
+  color: var(--hover-color);
   cursor: pointer;
 }
 .person-icon {
