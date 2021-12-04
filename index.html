@@ -33,8 +33,73 @@
           ><span class="logo__webstudio">Web</span>Studio
         </a>
         <svg class="modal-menu">
-          <use href="#icon-menu"></use>
+          <use href="#icon-menu"
+          data-mobile-menu-open></use>
         </svg>
+        <div class="backdrop is-hidden" data-mobile-menu>
+            <div class="modal">
+              <svg class="modal__icon">
+                <use
+                  href="./images/icons.svg#icon-close"
+                  data-mobile-menu-close
+                ></use>
+              </svg>
+              <p class="modal__heading">
+                Zostaw swoje dane w formularzu poniżej
+              </p>
+              <form class="modal-form">
+                <label class="modal-form__label" for="name">Imie</label>
+                <input
+                  id="name"
+                  class="modal-form__input"
+                  type="text"
+                  name="firstname"
+                />
+                <svg class="person-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <label class="modal-form__label" for="tel">Telefon</label>
+                <input
+                  id="tel"
+                  class="modal-form__input"
+                  type="tel"
+                  name="tel"
+                />
+                <svg class="tel-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <label class="modal-form__label" for="email">Email</label>
+                <input
+                  id="email"
+                  class="modal-form__input"
+                  type="email"
+                  name="email"
+                />
+                <svg class="email-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <label class="modal-form__label" for="comment">Komentarz</label>
+                <textarea
+                  id="comment"
+                  class="modal-form__textarea"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
+                <input
+                  id="user-policy"
+                  class="modal-form__checkbox visually-hidden"
+                  type="checkbox"
+                />
+                <label for="user-policy" class="modal-form__checkbox-label"
+                  >Oświadczam iż akceptuję
+                  <a href="#" class="checkbox-label__link">Regulamin</a> i
+                  <a href="#" class="checkbox-label__link"
+                    >Politykę Prywatności.</a
+                  ></label
+                >
+                <button type="submit" class="modal-form__submit">Wyślij</button>
+              </form>
+            </div>
+          </div>
         <nav class="navigation">
           <a
             class="navigation__item navigation__item-active links"
@@ -244,16 +309,16 @@
         </div>
       </section>
       <section class="section section--bg">
-        <div class="container">
+        <div class="container container--section">
           <h2 class="heading">Nasz zespół</h2>
           <ul class="list">
-            <li class="list__img">
+            <li class="list__img list__grid">
               <figure class="team-photos">
                 <img
+                  class="team-photos__img"
                   src="./images/img4.jpg"
+                  srcset="./images/img4-mobile.jpg, ./images/img4-tablet.jpg"
                   alt="Mężczyzna w okularach."
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="team-photos__item">
                   John Doe
@@ -281,13 +346,13 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="list__img">
+            <li class="list__img list__grid">
               <figure class="team-photos">
                 <img
+                  class="team-photos__img"
                   src="./images/img5.jpg"
+                  srcset="./images/img5-mobile.jpg, ./images/img5-tablet.jpg"
                   alt="Kobieta w okularach."
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="team-photos__item">
                   John Doe
@@ -315,13 +380,13 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="list__img">
+            <li class="list__img list__grid">
               <figure class="team-photos">
                 <img
+                  class="team-photos__img"
                   src="./images/img6.jpg"
+                  srcset="./images/img6-mobile.jpg, ./images/img6-tablet.jpg"
                   alt="Mężczyzna w jasnej koszuli."
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="team-photos__item">
                   John Doe<span class="team-photos__span">Marketing</span>
@@ -348,13 +413,13 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="list__img margin-zero">
+            <li class="list__img list__grid">
               <figure class="team-photos">
                 <img
+                  class="team-photos__img"
                   src="./images/img7.jpg"
+                  srcset="./images/img7-mobile.jpg, ./images/img7-tablet.jpg"
                   alt="Mężczyzna w czarnej koszulce."
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="team-photos__item">
                   John Doe<span class="team-photos__span">UI Designer</span>
@@ -384,51 +449,64 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section">
-        <div class="container">
+      <section class="section">
+        <div class="container container--section">
           <h2 class="heading">Nasi klienci</h2>
-          <div>
-            <div class="customer">
-              <svg class="customer__icon">
-                <use href="./images/icons.svg#icon-logo1"></use>
-              </svg>
-            </div>
-            <div class="customer">
-              <svg class="customer__icon">
-                <use href="./images/icons.svg#icon-logo2"></use>
-              </svg>
-            </div>
-            <div class="customer">
-              <svg class="customer__icon">
-                <use href="./images/icons.svg#icon-logo3"></use>
-              </svg>
-            </div>
-            <div class="customer">
-              <svg class="customer__icon">
-                <use href="./images/icons.svg#icon-logo4"></use>
-              </svg>
-            </div>
-            <div class="customer">
-              <svg class="customer__icon">
-                <use href="./images/icons.svg#icon-logo5"></use>
-              </svg>
-            </div>
-            <div class="customer margin-zero">
-              <svg class="customer__icon">
-                <use href="./images/icons.svg#icon-logo6"></use>
-              </svg>
+          <ul class="list">
+            <li class="customer-grid">
+              <div class="customer customer--bottom">
+                <svg class="customer__icon">
+                  <use href="./images/icons.svg#icon-logo1"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="customer-grid">
+              <div class="customer customer--bottom">
+                <svg class="customer__icon">
+                  <use href="./images/icons.svg#icon-logo2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="customer-grid">
+              <div class="customer customer--bottom">
+                <svg class="customer__icon">
+                  <use href="./images/icons.svg#icon-logo3"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="customer-grid">
+             <div class="customer customer--bottom4">
+                <svg class="customer__icon">
+                  <use href="./images/icons.svg#icon-logo4"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="customer-grid">
+              <div class="customer customer--bottom56">
+                <svg class="customer__icon">
+                  <use href="./images/icons.svg#icon-logo5"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="customer-grid">
+             <div class="customer customer--bottom56">
+                <svg class="customer__icon">
+                  <use href="./images/icons.svg#icon-logo6"></use>
+                </svg>
+              </div>
+            </li>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container container--footer">
         <div class="footer-contact">
           <a class="logo logo--footer" href="./index.html"
             ><span class="logo__webstudio">Web</span>Studio</a
           >
-          <address class="font-style-normal">
+          <address class="address-footer">
             <span class="address-span">m.Warszawa, Aleje Jerozolimskie 21</span
             ><br />
             <a class="links links--footer" href="mailto:info@devstudio.com">
@@ -480,7 +558,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

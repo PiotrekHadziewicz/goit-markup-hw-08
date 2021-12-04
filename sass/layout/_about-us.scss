@@ -1,7 +1,5 @@
-.section--bg {
-  background-color: #f5f4fa;
-}
 .team-photos {
+  width: 450px;
   background-color: var(--secondary-color);
   text-align: center;
   margin-block-start: 0em;
@@ -11,13 +9,15 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  &__img {
+    width: inherit;
+  }
   &__item {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
     color: inherit;
     margin-top: 30px;
-    flex-direction: row;
   }
   &__span {
     display: block;
@@ -25,7 +25,7 @@
     line-height: 1.188;
     color: #757575;
     margin-top: 10px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 }
 .social-ellipse {
@@ -36,7 +36,7 @@
   height: 44px;
   border-radius: 100%;
   margin-right: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,5 +64,69 @@
   .social-ellipse__icons {
     fill: var(--secondary-color);
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-photos {
+    width: 354px;
+  }
+  .social-ellipse {
+    margin-bottom: 30px;
+    &--footer {
+      margin-bottom: 0;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-photos {
+    width: 270px;
+    &__span {
+      display: block;
+      font-size: 16px;
+      line-height: 1.188;
+      color: #757575;
+      margin-top: 10px;
+      padding-bottom: 16px;
+    }
+  }
+  .social-ellipse {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__icons {
+      width: 20px;
+      height: 20px;
+      fill: #afb1b8;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover,
+    &:focus {
+      background-color: var(--hover-color);
+      cursor: pointer;
+    }
+    &--footer {
+      margin-bottom: 0;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+  .social-ellipse:hover,
+  .social-ellipse:focus {
+    .social-ellipse__icons {
+      fill: var(--secondary-color);
+      cursor: pointer;
+    }
   }
 }

@@ -2,12 +2,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-right: 30px;
+  margin-bottom: 30px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -25,6 +25,9 @@
     cursor: pointer;
   }
 }
+.customer-grid {
+  flex-basis: calc(100% / 2);
+}
 .customer:hover,
 .customer:focus {
   .customer__icon {
@@ -32,6 +35,31 @@
     cursor: pointer;
   }
 }
+.customer--bottom56 {
+  margin-bottom: 0;
+}
 .margin-zero {
   margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .customer {
+    width: 226px;
+  }
+  .customer-grid {
+    flex-basis: calc(100% / 3);
+  }
+  .customer--bottom4 {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer {
+    width: 170px;
+  }
+  .customer-grid {
+    flex-basis: calc(100% / 6);
+  }
+  .customer--bottom {
+    margin-bottom: 0;
+  }
 }

@@ -1,7 +1,6 @@
 .list {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -31,9 +30,8 @@
     margin-bottom: 30px;
   }
   &__img {
+    margin-bottom: 30px;
     margin-right: 30px;
-    display: flex;
-    flex-wrap: nowrap;
     position: relative;
   }
 }
@@ -59,12 +57,6 @@
     &__icons {
       width: 354px;
     }
-    &__img {
-      margin-right: 30px;
-      display: flex;
-      flex-wrap: nowrap;
-      position: relative;
-    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -72,6 +64,7 @@
     width: 1170px;
     &__grid {
       flex-basis: calc(100% / 4);
+      width: 0;
     }
     &__item {
       width: 270px;
@@ -82,12 +75,6 @@
     }
     &__icons {
       width: 270px;
-    }
-    &__img {
-      margin-right: 30px;
-      display: flex;
-      flex-wrap: nowrap;
-      position: relative;
     }
   }
 }

@@ -1,18 +1,19 @@
 .footer-form {
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   &__email {
     background-color: var(--background-color);
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin-right: 12px;
+    margin-bottom: 20px;
   }
   &__btn {
     display: flex;
@@ -38,5 +39,15 @@
   width: 24px;
   height: 24px;
   fill: var(--secondary-color);
-  margin-left: 24px;
+  margin-left: 23px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    flex-direction: row;
+    align-items: baseline;
+    &__email {
+      width: 358px;
+      margin-right: 12px;
+    }
+  }
 }
