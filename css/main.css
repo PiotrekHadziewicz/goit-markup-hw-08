@@ -183,6 +183,7 @@ ul {
   flex-wrap: wrap;
   padding: 60px 0;
   margin: 0 auto;
+  z-index: 0;
 }
 
 .section--bg {
@@ -318,6 +319,7 @@ ul {
 }
 
 .portfolio-img {
+  z-index: 0;
   width: 450px;
   height: 294px;
   overflow: hidden;
@@ -420,7 +422,7 @@ ul {
 
 .contact-modal {
   padding-top: 0;
-  margin-top: 302px;
+  margin-top: 50px;
 }
 
 .contact-modal__item {
@@ -428,6 +430,7 @@ ul {
 }
 
 .contact-modal__item--modifier {
+  z-index: 6;
   color: var(--hover-color);
   font-size: 40px;
   line-height: 1.167;
@@ -438,6 +441,7 @@ ul {
   display: flex;
   flex-direction: row;
   padding-left: 40px;
+  padding-bottom: 48px;
 }
 
 .social-links__item {
@@ -635,6 +639,7 @@ ul {
 }
 
 .backdrop {
+  z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -695,8 +700,8 @@ ul {
 }
 
 .modal-menu {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .is-hidden .modal {

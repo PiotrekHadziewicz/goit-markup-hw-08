@@ -1,5 +1,6 @@
 .navigation-modal,
 .contact-modal {
+  // z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -19,12 +20,13 @@
 }
 .contact-modal {
   padding-top: 0;
-  margin-top: 302px;
+  margin-top: 50px;
 }
 .contact-modal__item {
   color: #757575;
 }
 .contact-modal__item--modifier {
+  z-index: 6;
   color: var(--hover-color);
   font-size: 40px;
   line-height: 1.167;
@@ -34,6 +36,7 @@
   display: flex;
   flex-direction: row;
   padding-left: 40px;
+  padding-bottom: 48px;
   &__item {
     color: var(--hover-color);
     font-weight: 500;
